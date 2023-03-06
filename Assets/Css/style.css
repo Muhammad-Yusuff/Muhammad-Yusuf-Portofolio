@@ -1,0 +1,99 @@
+
+
+
+#img-profile {
+  width: 75%;
+  border: 20px;
+}
+
+header ul {
+  text-align: center;
+  justify-content: center;
+}
+
+#img-profile {
+  width: 100%;
+  border: 20px;
+}
+
+h1.text-profile {
+  margin-top: 100px;
+}
+
+
+
+  
+@media screen and (min-width: 960px) {
+  .footer img {
+    width: 100%;
+  }
+}
+
+h2.pt-1 {
+  margin-top: 100px;
+}
+
+#carouselExampleIndicators {
+  height: 750px;
+}
+
+.btn {
+  width: 75%;
+}
+
+.song-icon {
+  width: 50%;
+  margin-top: 50px;
+}
+
+footer img {
+  width: 10%;
+}
+/*
+#card-profile {
+  background-color: #3583DE;
+  height: 400px;
+  margin-top: 100px;
+}
+
+  h1.text-head {
+    margin-top: 50px;
+    font-size: 24px;
+    color: black;
+  }
+
+  p.text-head {
+    margin-top: 25px;
+    font-size: large;
+    color: #FEFEFE;
+  }
+
+  .button-head {
+    margin-top: 20px;
+    width: 75%;
+    height: 63px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FEFEFE;
+  }
+
+  #card-song {
+    height: 700px;
+    border-radius: 20px;
+  }
+
+  .card img {
+    width: 50%;
+    margin-top: 20%;
+
+  }
+
+  .card-title {
+    margin-top: 20%;
+  }
+
+  audio {
+    margin-top: 10%;
+    width: 75%;
+  }
+*/

@@ -1,4 +1,6 @@
-
+header {
+  padding: 25px;
+}
 
 
 #img-profile {
@@ -10,6 +12,7 @@ header ul {
   text-align: center;
   justify-content: center;
 }
+
 
 
 #img-profile {
@@ -85,4 +88,34 @@ audio {
 }
 footer img {
   width: 10%;
+}
+
+@media screen and (max-width: 546px) {
+  header  {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #carouselExampleIndicators {
+    height: 550px;
+  }
+
+  #img-porto1 {
+    margin-top: 15px;
+    width: 75%;
+  }
+  .head-porto1{
+    margin-top: 25px;
+  }
+  .title-porto1 {
+    margin-top: 25px;
+  }
 }

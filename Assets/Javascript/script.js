@@ -13,3 +13,4 @@ bgSidebar.addEventListener('click', function() {
   sidebar.classList.remove('change')
   burger.classList.remove('change')
 })
+

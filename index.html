@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="Assets/Vendor/riki-builder/vendor/bootstrap5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/Vendor/riki-builder/vendor/bootstrap5.2.3/css/bootstrap-icons.css">
     <link rel="stylesheet" href="Assets/Vendor/sriki-builder/vendor/rikiblock/css/riki_block.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Assets/Vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
             
     <title>Muhammad Yusuf Portofolio</title>
@@ -64,9 +62,9 @@
 
 <!--Profile-->
   <section class="riki-block py-5" id="home">
-    <div class="container" data-aos="fade-up">
+    <div class="container ">
       <div class="row align-items-center">
-        <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0" data-aos="fade-up-left">
+        <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0">
           <center><img alt="image" class="img-fluid rounded-4" id="img-profile"src="Assets/Img/james-owen-MuIvHRJbjA8-unsplash.jpg" alt="img-profile"></center>
         </div>
   
@@ -81,8 +79,8 @@
   </section>
 
   <!--Portofolio 1-->
-  <div id="carouselExampleIndicators" class="carousel slide bg-primary mt-5" data-bs-ride="carousel" data-aos="fade-up">
-    <div class="row col-12" id="portofolio" data-aos="fade-up" >
+  <div id="carouselExampleIndicators" class="carousel slide bg-primary mt-5" data-bs-ride="carousel" >
+    <div class="row col-12" id="portofolio"  >
       <center><h2 class="head-porto1">Recent Desain Projects</h2></center>
     </div>
     <div class="carousel-indicators">
@@ -128,7 +126,7 @@
 
     <!--Portofolio 2-->    
     <section class="riki-block">
-      <div class="container" data-aos="fade-up">
+      <div class="container" >
         <div class="row text-center" >
           <div class="col-12">
             <h1 class="mt-5">Recent Music Production and Mixing Mastering Projects</h1>
@@ -137,7 +135,7 @@
     
         <div class="row text-center justify-content-center mt-5">
           <div class="col-10 col-sm-4">
-            <div class="card-porto2" data-aos="fade-up-left">
+            <div class="card-porto2" >
               <div class="card-body">
                 <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
                 <audio controls  class="mt-5">
@@ -206,7 +204,7 @@
             </div>
           </div>
     
-          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0" data-aos="fade-up">
+          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0">
             <div class="fdb-box">
               <div class="row no-gutters align-items-center">
                 <div class="col-3">
@@ -229,7 +227,7 @@
             </div>
           </div>
     
-          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0" data-aos="fade-up-right">
+          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0" >
             <div class="fdb-box">
               <div class="row no-gutters align-items-center">
                 <div class="col-3">
@@ -295,30 +293,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      AOS.init({
-          // Global settings:
-          disable: false,
-          startEvent: 'DOMContentLoaded',
-          initClassName: 'aos-init', 
-          animatedClassName: 'aos-animate', 
-          useClassNames: false, 
-          disableMutationObserver: false, 
-          debounceDelay: 50, 
-          throttleDelay: 99, 
-          
-      
-          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-          offset: 120, 
-          delay: 0, 
-          duration: 1000, 
-          easing: 'ease', 
-          once: false, 
-          mirror: false, 
-          anchorPlacement: 'top-bottom',
-      
-      });
-      </script>
 </body>
 </html>

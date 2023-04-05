@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Assets/Css/style.css">
+    <link rel="stylesheet" href="Assets/font/Alkatra,Bebas_Neue,Montserrat/Bebas_Neue/BebasNeue-Regular.ttf">
     <link rel="stylesheet" href="Assets/Vendor/riki-builder/vendor/bootstrap5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/Vendor/riki-builder/vendor/bootstrap5.2.3/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="Assets/Vendor/sriki-builder/vendor/rikiblock/css/riki_block.css">
     <script src="Assets/Vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="Assets/Css/prettyPhoto.css">
+    <script src="Assets/Javascript/jquery-1.6.1.min.js"></script> 
+    <script src="Assets/Javascript/jquery.prettyPhoto.js"></script>
+    
             
     <title>Muhammad Yusuf Portofolio</title>
 </head>
 <body>
 
-  <header class="bg-primary  bisadicopy">
+  <header class="">
     <div class="container">
       <nav class="navbar navbar-expand-md no-gutters">
         <div class="col-2 text-start">
@@ -22,169 +30,179 @@
           </a>
         </div>
   
-        <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav12" aria-controls="navbarNav12" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon  text-white rounded-2"></span>
+        <button class="navbar-toggler text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav12" aria-controls="navbarNav12" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon  text-dark rounded-2"></span>
         </button>
 
-        
-  
         <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav12">
           <ul class="navbar-nav justify-content-center">
-            <li class="nav-item active">
-              <a class="nav-link text-center" href="#home">Home</a>
+            <li class="nav-item ">
+              <a class="nav-link text-center text-dark" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#portofolio">Portofolio</a>
+              <a class="nav-link text-dark" href="#div-galeri">Portofolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#testimoni">Testimonials</a>
+              <a class="nav-link text-dark" href="#testimoni">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#aboutus">About Us</a>
+              <a class="nav-link text-dark" href="#aboutus">About Us</a>
             </li>
           </ul>
         </div>
   
         <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
           <li class="nav-item">
-            <a class="nav-link" href="https://instagram.com/muhammad.yusuff__?igshid=MDM4ZDc5MmU="><i class="bi bi-instagram"></i></a>
+            <a class="nav-link text-dark" href="https://instagram.com/muhammad.yusuff__?igshid=MDM4ZDc5MmU="><i class="bi bi-instagram" id="icon"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="nav-link text-dark" href="#"><i class="bi bi-linkedin" id="icon"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-tiktok"></i></a>
+            <a class="nav-link text-dark" href="https://github.com/Muhammad-Yusuff"><i class="bi bi-github" id="icon"></i></a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-<!--Profile-->
-  <section class="riki-block py-5" id="home">
-    <div class="container ">
-      <div class="row align-items-center">
-        <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0">
-          <center><img alt="image" class="img-fluid rounded-4" id="img-profile"src="Assets/Img/james-owen-MuIvHRJbjA8-unsplash.jpg" alt="img-profile"></center>
-        </div>
-  
-        <div class="col-12 ms-auto col-md-6 col-lg-5" data-aos="fade-up-right">
-          <center><h1 class="text-profile">Hi My Name Is Muhammad Yusuf</h1></center>
-          <center><p class="lead">I am a music producer, mixing engineer, graphic designer and web developer.
-            I have over 2 years of experience in music production and have completed over 100 projects for clients.</p></center>
-          <center><p><a class="btn btn-primary mt-4 mb-5 mb-md-0 rounded-4" href="https://www.upwork.com/freelancers/~01e5fa2e8e58a83547">Let's Work!</a></p></center>
+  <section style="background-image: url(Assets/Img/9.svg);">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md-6 text-lg-left">
+          <h1 class="h1-profile" data-aos="fade-left">GREETINGS TO YOU!</h1>
+          <p class="lead mt-4" id="p-profile" data-aos="fade-up">My Name Muhammad Yusuf I'm Music Producer, Mixing Engineer, Frontend Developer and Graphic Designer.
+            I have more than 2 years experience as a Freelancer Music Producer, Graphic Designer and Frontend Developer
+            and has completed more than 100 projects for client on various platforms.</p>
+            <p class="mt-4" id="btn-profile">
+              <a class="btn" id="btn-profile1" href="https://www.upwork.com/freelancers/~01e5fa2e8e58a83547">Hire Me</a>
+              <a class="btn"  id="btn-profile2" href="https://docs.google.com/uc?export=download&id=1qimwZX2cQPXlIvytPYP1QeK6Hf6AkSTQ"> <i class="bi bi-file-person"></i>  Download CV</a>
+            </p>
+          <p class="follow-profile">Follow us on</p>
+          <p class="link-profile">
+            <a href="https://github.com/Muhammad-Yusuff" class="mx-2 text-dark"><i class="bi bi-github" id="icon"></i></a>
+            <a href="https://instagram.com/muhammad.yusuff__?igshid=MDM4ZDc5MmU=" class="mx-2 text-dark"><i class="bi bi-instagram" id="icon"></i></a>
+            <a href="https://www.rikikurnia.com" class="mx-2 text-dark"><i class="bi bi-linkedin" id="icon"></i></a>
+            <a href="https://wa.me/6288228775756" class="mx-2 text-dark"><i class="bi bi-whatsapp" id="icon"></i></a>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Portofolio 1-->
-  <div id="carouselExampleIndicators" class="carousel slide bg-primary mt-5" data-bs-ride="carousel" >
-    <div class="row col-12" id="portofolio"  >
-      <center><h2 class="head-porto1">Recent Desain Projects</h2></center>
+<!--porto1 filter-->
+  <div align="center" id="div-galeri" style="background-image: url(Assets/Img/9.svg);">
+    <h2 data-aos="fade-up" id="title-galeri">PORTOFOLIO</h2>
+    <div id="myBtnContainer"  data-aos="fade-up">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('design')"> Cover Art Design</button>
+      <button class="btn" onclick="filterSelection('web')"> Frontend Web Dev</button>
+      <button class="btn" onclick="filterSelection('music')"> Music Production</button>
     </div>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner text-center" >
-      <div class="carousel-item active">
-        <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-4 m-auto">
-          <div class="fdb-box fdb-touch">
-            <img alt="image" class="img-fluid rounded-3" id="img-porto1" src="Assets/Img/Project Julia Robex pink ne new.jpg">
-            <h3 class="title-porto1"><strong>Project 1</strong></h3>
-          </div>
+  
+    <!-- layout gallery -->
+    <div class="row" id="galeri" data-aos="fade-up">
+      <div class="column design col-6 col-sm-12 col-md-6 col-lg-3  mt-4 text-center">
+        <div class="content" data-aos="fade-up">
+          <img class="img-galeri" src="Assets/Img/jweb ulia robex revisi terahir new.jpg" alt="Mountains" style="width:75%">
+          <h4 class=" text-dark head-galeri">Cover Art Song</h4>
+          <p class="lead">Julia robex</p>
         </div>
       </div>
-      <div class="carousel-item text-center">
-        <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-4 m-auto">
-          <div class="fdb-box fdb-touch">
-            <img alt="image" class="img-fluid rounded" id="img-porto1" src="Assets/Img/Dababy album cover.jpg">
-            <h3 class="title-porto1"><strong>Project 2</strong></h3>
-          </div>
+      <div class="column design col-6 col-sm-12 col-md-6 col-lg-3  mt-4 text-center ">
+        <div class="content" data-aos="fade-up">
+          <img class="img-galeri" src="Assets/Img/Dababy CD album coverjlb.jpg" alt="Lights"style="width:75%">
+          <h4 class="text-dark head-galeri" >dababy Album</h4>
+          <p class="lead" >TheBabyBeatz</p>
         </div>
       </div>
-      <div class="carousel-item text-center">
-        <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-4 m-auto">
-          <div class="fdb-box fdb-touch">
-            <img alt="image" class="img-fluid rounded" id="img-porto1" src="Assets/Img/revisi 2.jpg">
-            <h3 class="title-porto1"><strong>Project 3</strong></h3>
-          </div>
+      <div class="column design col-6 col-sm-12 col-md-6 col-lg-3  mt-4 text-center">
+        <div class="content" data-aos="fade-up">
+          <img class="img-galeri" src="Assets/Img/drill album cd.jpg" alt="Nature" style="width:75%">
+          <h4 class="text-dark head-galeri " >Drill Album</h4>
+          <p class="lead" >TheBabyBeatz</p>
+        </div>
+      </div>
+      <div class="column design col-6 col-sm-12 col-md-6 col-lg-3  mt-4 text-center">
+        <div class="content" data-aos="fade-up">
+          <img class="img-galeri" src="Assets/Img/love you web.jpg" alt="Nature" style="width:75%">
+          <h4 class="text-dark head-galeri " >Love You</h4>
+          <p class="lead" >TheBabyBeatz</p>
+        </div>
+      </div>
+
+      <div class="column web col-6 col-sm-12 col-md-6 col-lg-6 mt-4 text-center" >
+        <div class="content" data-aos="fade-up">
+          <img class="img-galeri" src="Assets/Img/Salinan dari Blok Teks dengan Mock-up Laptop Rata-Kanan.jpg" alt="Car"style="width:75%">
+          <h4 class="head-galeri text-dark" >Web Portofolio</h4>
+          <p class="lead" >Anna Belle</p>
+        </div>
+      </div>
+      <div class="column web col-6 col-sm-12 col-md-6 col-lg-6 mt-4 text-center">
+        <div class="content" data-aos="fade-up">
+          <img class="img-galeri " src="Assets/Img/Blok Teks dengan Mock-up Laptop Rata-Kanan (1).jpg" alt="Car" style="width:75%">
+          <h4 class="head-galeri text-dark" >Web coffee Shop</h4>
+          <p class="lead">Kopi Kuy</p>
+        </div>
+      </div>
+      <!--Music-->
+  
+      <div class="column music col-6 col-sm-12 col-md-6 col-lg-3 mt-4 text-center">
+        <div class="content " data-aos="fade-up" >
+            <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="" >
+            <audio controls>
+              <source src="Assets/Audio/Sergiyaro-Another Mountain.mp3" type="audio/mpeg">
+            </audio>
+            <h2 class="head-galeri text-dark">Sergiyaro-Another Mountain</h2>
+            <p class="lead">Sergiyaro</p>
+        </div>
+      </div>
+      <div class="column music col-6 col-sm-12 col-md-6 col-lg-3 mt-4 text-center ">
+        <div class="content" data-aos="fade-up">
+            <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
+            <audio controls>
+              <source src="Assets/Audio/Project-Hilmy-2-wav-untagged.mp3" type="audio/mpeg">
+            </audio>
+            <h2 class="head-galeri text-dark">Healme-Tutup Rasa</h2>
+            <p class="lead">Healme</p>
+        </div>
+      </div>
+      <div class="column music col-6 col-sm-12 col-md-6 col-lg-3 mt-4 text-center">
+        <div class="content" data-aos="fade-up">
+            <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
+            <audio controls>
+              <source src="Assets/Audio/kontes mixing 2 rudy mp3.mp3" type="audio/mpeg">
+            </audio>
+            <h2 class="head-galeri text-dark">Ananta-Kesepian</h2>
+            <p class="lead">Ananta</p>
+        </div>
+      </div>
+      <div class="column music col-6 col-sm-12 col-md-6 col-lg-3  mt-4 text-center">
+        <div class="content" data-aos="fade-up">
+            <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
+            <audio controls>
+              <source src="Assets/Audio/Project Mixing Randy 1.4 new.mp3" type="audio/mpeg">
+            </audio>
+            <h2 class="head-galeri text-dark">Simalodra-Ini Musikku</h2>
+            <p class="lead">Simalodra</p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-
-    <!--Portofolio 2-->    
-    <section class="riki-block">
-      <div class="container" >
-        <div class="row text-center" >
-          <div class="col-12">
-            <h1 class="mt-5">Recent Music Production and Mixing Mastering Projects</h1>
-          </div>
-        </div>
-    
-        <div class="row text-center justify-content-center mt-5">
-          <div class="col-10 col-sm-4">
-            <div class="card-porto2" >
-              <div class="card-body">
-                <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
-                <audio controls  class="mt-5">
-                  <source src="Assets/Audio/Sergiyaro-Another Mountain.mp3" type="audio/mpeg">
-                </audio>
-                <h2>Sergiyaro-Another Mountain</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-sm-4 pt-5 pt-sm-0">
-            <div class="card-porto2">
-              <div class="card-body">
-                <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
-                <audio controls  class="mt-5">
-                  <source src="Assets/Audio/Project-Hilmy-2-wav-untagged.mp3" type="audio/mpeg">
-                </audio>
-                <h2>Healme-tutup Rasa</h2>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-10 col-sm-4 pt-5 pt-sm-0">
-            <div class="card-porto2" data-aos="fade-up-right">
-              <div class="card-body">
-                <img class="song-icon" src="Assets/Img/pngkey.com-music-icon-png-10172.png" alt="">
-                <audio controls class="mt-5">
-                  <source src="Assets/Audio/kontes mixing 2 rudy mp3.mp3" type="audio/mpeg">
-                </audio>
-                <h2>Ananta-Kesepian</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  
     <!--Testimoni-->
     <section class="riki-block mt-5 mb-5" id="testimoni"  style="background-image: url(Assets/Img/9.svg);">
       <div class="container" id="testimoni">
-        <div class="row text-center justify-content-center">
+        <div class="row text-center justify-content-center" data-aos="fade-up">
           <div class="col-md-10 col-lg-8 col-xl-7">
-            <h1>Testimonials</h1>
+            <h1 class="head-testimoni">Testimonials</h1>
           </div>
         </div>
     
         <div class="row mt-5 align-items-center justify-content-center">
-          <div class="col-md-8 col-lg-4" data-aos="fade-up-left">
+          <div class="col-md-8 col-lg-4" data-aos="fade-up" >
             <div class="fdb-box">
-              <div class="row no-gutters align-items-center">
+              <div class="row no-gutters align-items-center" >
                 <div class="col-3">
                   <img alt="image" class="img-fluid rounded" src="Assets/Img/1.jpg">
                 </div>
@@ -204,7 +222,7 @@
             </div>
           </div>
     
-          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0">
+          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0" data-aos="fade-up">
             <div class="fdb-box">
               <div class="row no-gutters align-items-center">
                 <div class="col-3">
@@ -227,7 +245,7 @@
             </div>
           </div>
     
-          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0" >
+          <div class="col-md-8 col-lg-4 mt-4 mt-lg-0" data-aos="fade-up">
             <div class="fdb-box">
               <div class="row no-gutters align-items-center">
                 <div class="col-3">
@@ -263,26 +281,25 @@
           <div class="col mt-4 mt-lg-2 text-center">
             <ul class="nav justify-content-center" id="link-footer">
               <li class="nav-item">
-                <a class="nav-link active text-dark" href="#home">Home</a>
+                <a class="nav-link " id="link-footer-sub" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#portofolio">Portofolio</a>
+                <a class="nav-link" id="link-footer-sub" href="#div-galeri">Portofolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#testimoni">Testimonials</a>
+                <a class="nav-link " id="link-footer-sub" href="#testimoni">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#aboutus">About Us</a>
+                <a class="nav-link " id="link-footer-sub" href="#aboutus">About Us</a>
               </li>
             </ul>
           </div>
     
-          <div class="col-12 col-lg-2 mt-5  text-lg-right" id="link-akun-footer">
-            <a href="https://www.rikikurnia.com" class="mx-2 text-dark"><i class="bi bi-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.rikikurnia.com" class="mx-2 text-dark"><i class="bi bi-facebook" aria-hidden="true"></i></a>
-            <a href="https://instagram.com/muhammad.yusuff__?igshid=MDM4ZDc5MmU=" class="mx-2 text-dark"><i class="bi bi-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.rikikurnia.com" class="mx-2 text-dark"><i class="bi bi-pinterest" aria-hidden="true"></i></a>
-            <a href="https://www.rikikurnia.com" class="mx-2 text-dark"><i class="bi bi-google" aria-hidden="true"></i></a>
+          <div class="col-12 col-lg-2 mt-5  text-lg-right" >
+            <a href="https://www.rikikurnia.com" class="mx-2 text-dark" ><i class="bi bi-linkedin" id="link-akun-footer" ></i></a>
+            <a href="mailto:muhammad.business72@gmail.com" class="mx-2 text-dark" ><i class="bi bi-envelope" id="link-akun-footer" ></i></a>
+            <a href="https://instagram.com/muhammad.yusuff__?igshid=MDM4ZDc5MmU=" class="mx-2 text-dark" ><i class="bi bi-instagram" id="link-akun-footer" aria-hidden="true"></i></a>
+            <a href="https://github.com/Muhammad-Yusuff" class="mx-2 text-dark" ><i class="bi bi-github" id="link-akun-footer" ></i></a>
           </div>
         </div>
     
@@ -293,5 +310,11 @@
         </div>
       </div>
     </footer>
+
+    <script>   
+      AOS.init(); 
+    </script>
+
+    <script src="Assets/Javascript/script.js"></script>
 </body>
 </html>

@@ -1,68 +1,150 @@
+
 header {
   padding: 25px;
+  background-color: white;
 }
-
-
-#img-profile {
-  width: 75%;
-  border: 20px;
-}
-
 header ul {
   text-align: center;
   justify-content: center;
 }
 
-
-
-#img-profile {
-  width: 100%;
-  border: 20px;
+header ul li {
+  font-weight: 500;
 }
 
-h1.text-profile {
-  margin-top: 100px;
-}
-
-
-
+header ul li:hover {
+  text-decoration: underline solid 5px rgb(0, 101, 233);
   
-@media screen and (min-width: 960px) {
-  .footer img {
-    width: 100%;
-  }
 }
 
-.head-porto1{
+#icon:hover {
+  color:  rgb(0, 101, 233);
+}
+
+
+/*profile*/
+
+.bg-profile{
+  background-size: cover;
+}
+
+.h1-profile {
+  font-size: 50px;
+
+  margin-top: 0px;
+  color: rgb(0, 101, 233);
+}
+
+#p-profile {
+  margin-top: 50px;
+ 
+}
+
+#btn-profile1 {
+  width: 150px;
+  margin-top: 25px;
+  background-color: rgb(0, 101, 233);
+  color: white;
+  border-radius: 10px;
+}
+
+#btn-profile1:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+#btn-profile2 {
+  width: 250px;
+  margin-top: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#btn-profile2:hover {
+  background-color: rgb(0, 101, 233);
+  color: white;
+  border-color: white;
+}
+
+/*porto1 firterabel*/
+* {
+  box-sizing: border-box;
+}
+
+
+/* posisi di tengah */
+.main {
+
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+
+/* membuat colom */
+.column {
+
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#div-galeri {
+  padding: 20px;
+  margin-top: 100PX;
+}
+
+#galeri{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#title-galeri{
+  margin-bottom: 50px;
+}
+
+.content {
+  margin-top: 50px;
+
+}
+
+.head-galeri {
   margin-top: 50px;
 }
 
-#img-porto1 {
-  margin-top: 75px;
-  width: 75%;
+.img-galeri {
+  border-radius: 10px;
+
 }
 
-.title-porto1 {
-  margin-top: 50px;
-}
-audio {
-  width: 70%;
-}
-
-.card-porto2 {
-  height: 450px;
-  margin-bottom: 20px;
-  background-color: rgb(0, 128, 233);
-  border: 5px solid rgb(0, 128, 233);
-  border-radius: 10px
-}
-
-#carouselExampleIndicators {
-  height: 750px;
+.show {
+  display: block;
+  
 }
 
 .btn {
-  width: 75%;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+   color: white;
 }
 
 .song-icon {
@@ -70,52 +152,183 @@ audio {
   margin-top: 50px;
 }
 
-#testimoni {
-  margin-top: 100px;
+
+audio {
+  margin-top: 50px;
+  width: 70%;
+}
+
+
+
+
+/*testimoni*/
+.head-testimoni {
+  margin-top: 200px;
+  color: rgb(0, 128, 233);
 } 
+
+/*footer*/
 
 #aboutus {
   height: 200px;
-  margin-top: 150px;
+  margin-top: 250px;
+  color: rgb(0, 0, 0);
 }
 
 #link-footer {
   margin-top: 50px;
 }
 
-#link-akun-footer {
-  margin-top: 50px;
-}
-footer img {
-  width: 10%;
+#link-footer-sub {
+  color: white;
 }
 
-@media screen and (max-width: 546px) {
+#link-footer-sub:hover {
+  text-decoration: underline solid white 5px;
+}
+
+#link-akun-footer {
+  margin-top: 50px;
+
+}
+
+#link-akun-footer:hover {
+  color: white;
+   
+}
+
+
+@media screen and (min-width: 1000px) {
+  .footer img {
+    width: 100%;
+  }
+  /*porto2*/
+  #song-porto-phone {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+  }
+  /*Header*/
   header  {
     padding: 10px;
   }
 
-  .btn {
+  /*profile*/
+  #img-profile {
+    margin-top: 50px;
     width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #carouselExampleIndicators {
-    height: 550px;
   }
 
-  #img-porto1 {
-    margin-top: 15px;
-    width: 75%;
+  .h1-profile {
+    margin-top: -25px;
+    text-align: center;
+    font-size: 32px;
   }
-  .head-porto1{
-    margin-top: 25px;
+
+  .p-profile{
+    text-align: center;
   }
-  .title-porto1 {
-    margin-top: 25px;
+
+  #btn-profile {
+    display: flex;
+    justify-content: center;
+    
   }
+
+  #btn-profile1 {
+    margin-top: 20px;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  
+  #btn-profile2 {
+    margin-top: 20px;
+    width: 150px;
+
+  }
+
+  .follow-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .link-profile{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*porto  galeri*/
+  #div-galeri {
+    padding: 20px;
+    margin-top: 10PX;
+  }
+  
+  #galeri{
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .content {
+    margin-top: 50px;
+    background-color: white;
+  }
+  
+  .head-galeri {
+    margin-top: 50px;
+  }
+  
+  .img-galeri {
+    border-radius: 10px;
+  }
+
+
+  .song-icon {
+    width: 50%;
+    margin-top: 0px;
+  }
+  
+  
+  audio {
+   
+    width: 70%;
+    margin-bottom: -50px;
+    margin-top: -50px;
+  }
+  
+
 }
+
+/*testimoni*/
+.head-testimoni {
+  margin-top: 100px;
+} 
+
+/*footer*/
+#aboutus {
+  margin-top: 150px;
+}
+
+
+#link-footer {
+  margin-top: 0px;
+}
+
+#link-footer-sub {
+  color: white;
+}
+
+
+#link-akun-footer {
+  margin-top: 0px;
+
+}
+

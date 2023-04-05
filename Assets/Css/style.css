@@ -123,8 +123,17 @@ h1 {
 
 .img-galeri {
   border-radius: 10px;
-
+  -webkit-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  -ms-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
 }
+
+.content:hover .img-galeri {
+  transform: scale(1.05)
+}
+
 
 .show {
   display: block;
@@ -175,8 +184,14 @@ audio {
   color: rgb(0, 0, 0);
 }
 
+.h3-footer{
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
 #link-footer {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #link-footer-sub {
@@ -227,12 +242,13 @@ audio {
 
   .h1-profile {
     margin-top: -25px;
-    text-align: center;
+    text-align: left;
     font-size: 32px;
   }
 
-  .p-profile{
-    text-align: center;
+  #p-profile{
+    text-align: start;
+    font-size: 15px;
   }
 
   #btn-profile {
@@ -279,7 +295,6 @@ audio {
   
   .content {
     margin-top: 50px;
-    background-color: white;
   }
   
   .head-galeri {
@@ -304,9 +319,6 @@ audio {
     margin-top: -50px;
   }
   
-
-}
-
 /*testimoni*/
 .head-testimoni {
   margin-top: 100px;
@@ -317,18 +329,26 @@ audio {
   margin-top: 150px;
 }
 
+.h3-footer{
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+}
 
 #link-footer {
   margin-top: 0px;
 }
 
 #link-footer-sub {
+  font-size: 15px;
   color: white;
+  margin-bottom: -15px;
 }
 
 
 #link-akun-footer {
-  margin-top: 0px;
+
 
 }
 
+}

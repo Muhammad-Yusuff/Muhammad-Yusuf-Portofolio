@@ -1,7 +1,8 @@
 
 header {
-  padding: 25px;
+  padding: 10px;
   background-color: white;
+
 }
 header ul {
   text-align: center;
@@ -40,6 +41,7 @@ header ul li:hover {
  
 }
 
+
 #btn-profile1 {
   width: 150px;
   margin-top: 25px;
@@ -66,6 +68,8 @@ header ul li:hover {
   color: white;
   border-color: white;
 }
+
+
 
 /*porto1 firterabel*/
 * {
@@ -119,6 +123,7 @@ h1 {
 
 .head-galeri {
   margin-top: 50px;
+  font-size: 28px;
 }
 
 .img-galeri {
@@ -258,6 +263,10 @@ audio {
   }
 
   #btn-profile1 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
     width: 150px;
     margin-right: 10px;
@@ -265,6 +274,10 @@ audio {
   
   
   #btn-profile2 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
     width: 150px;
 
@@ -299,6 +312,11 @@ audio {
   
   .head-galeri {
     margin-top: 50px;
+    font-size: 20px;
+  }
+
+  #p-galeri {
+    font-size: 15px;
   }
   
   .img-galeri {
@@ -323,7 +341,9 @@ audio {
 .head-testimoni {
   margin-top: 100px;
 } 
-
+#p-testimoni{
+  font-size: 15px;
+}
 /*footer*/
 #aboutus {
   margin-top: 150px;
@@ -345,10 +365,5 @@ audio {
   margin-bottom: -15px;
 }
 
-
-#link-akun-footer {
-
-
-}
 
 }

@@ -2,7 +2,7 @@
 header {
   padding: 10px;
   background-color: white;
-
+  margin-top: 28px;
 }
 header ul {
   text-align: center;
@@ -31,8 +31,8 @@ header ul li:hover {
 
 .h1-profile {
   font-size: 50px;
-
-  margin-top: 0px;
+  font-weight: 700;
+  margin-top: 50px;
   color: rgb(0, 101, 233);
 }
 
@@ -41,34 +41,117 @@ header ul li:hover {
  
 }
 
-
-#btn-profile1 {
-  width: 150px;
-  margin-top: 25px;
-  background-color: rgb(0, 101, 233);
+.btn-cssbuttons {
+  --btn-color: #275efe;
+  width: 50%;
+  margin-top: 50px;
+  padding: 16px 32px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
   color: white;
-  border-radius: 10px;
-}
+  background: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+ 
+ .btn-cssbuttons::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-color);
+  border-radius: 18px;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
 
-#btn-profile1:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-}
+ .btn-cssbuttons:hover {
+  border-radius: 18px;
+ }
+ 
+ .btn-cssbuttons span,
+ .btn-cssbuttons span span {
+  display: inline-flex;
+  vertical-align: middle;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+ 
+ .btn-cssbuttons span {
+  transition-delay: 0.05s;
+ }
+ 
+ .btn-cssbuttons span:first-child {
+  padding-right: 7px;
+ }
+ 
+ .btn-cssbuttons span span {
+  margin-left: 8px;
+  transition-delay: 0.1s;
+ }
+ 
+ .btn-cssbuttons ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transform: translateY(-50%);
+ }
+ 
+ .btn-cssbuttons ul li {
+  flex: 1;
+ }
+ 
+ .btn-cssbuttons ul li a {
+  display: inline-flex;
+  vertical-align: middle;
+  transform: translateY(55px);
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+ 
+ .btn-cssbuttons ul li a:hover {
+  opacity: 0.5;
+ }
+ 
+ .btn-cssbuttons:hover::before {
+  transform: scale(1.2);
+ }
+ 
+ .btn-cssbuttons:hover span,
+ .btn-cssbuttons:hover span span {
+  transform: translateY(-55px);
+ }
+ 
+ .btn-cssbuttons:hover ul li a {
+  transform: translateY(0);
+ }
+ 
+ .btn-cssbuttons:hover ul li:nth-child(1) a {
+  transition-delay: 0.15s;
+ }
+ 
+ .btn-cssbuttons:hover ul li:nth-child(2) a {
+  transition-delay: 0.2s;
+ }
+ 
+ .btn-cssbuttons:hover ul li:nth-child(3) a {
+  transition-delay: 0.25s;
+ }
 
-#btn-profile2 {
-  width: 250px;
+.follow-profile {
   margin-top: 25px;
-  border: 1px solid black;
-  border-radius: 10px;
 }
-
-#btn-profile2:hover {
-  background-color: rgb(0, 101, 233);
-  color: white;
-  border-color: white;
-}
-
 
 
 /*porto1 firterabel*/
@@ -204,7 +287,8 @@ audio {
 }
 
 #link-footer-sub:hover {
-  text-decoration: underline solid white 5px;
+  color: black;
+  
 }
 
 #link-akun-footer {
@@ -218,69 +302,21 @@ audio {
 }
 
 
-@media screen and (min-width: 1000px) {
-  .footer img {
-    width: 100%;
-  }
-  /*porto2*/
-  #song-porto-phone {
-    display: none;
-  }
-}
-
-
-
-@media screen and (max-width: 480px) {
-  body{
-    overflow-x: hidden;
-  }
-  /*Header*/
-  header  {
-    padding: 10px;
-  }
-
-  /*profile*/
-  #img-profile {
-    margin-top: 50px;
-    width: 100%;
+@media screen and (width: 1024px) {
+  header {
+    margin-top: 0px;
   }
 
   .h1-profile {
-    margin-top: -25px;
-    text-align: left;
-    font-size: 25px;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
   }
 
-  #p-profile{
-    text-align: start;
-    font-size: 15px;
-  }
-
-  #btn-profile {
-    display: flex;
-    justify-content: center;
-    
-  }
-
-  #btn-profile1 {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    width: 150px;
-    margin-right: 10px;
-  }
-  
-  
-  #btn-profile2 {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    width: 150px;
-
+  .btn-cssbuttons {
+    left: 50%;
+    margin-left: 25%;
   }
 
   .follow-profile{
@@ -293,11 +329,70 @@ audio {
     display: flex;
     justify-content: center;
   }
+
+  #footer-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+  }
+  /*Header*/
+  header  {
+    padding: 10px;
+    margin-top: 0px;
+
+  }
+
+  /*profile*/
+  #img-profile {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .h1-profile {
+    margin-top: -40px;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  #p-profile{
+    text-align: start;
+    font-size: 15px;
+  }
+
+  .btn-cssbuttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .follow-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .link-profile{
+    display: flex;
+    justify-content: center;
+  }
   
   /*porto  galeri*/
   #div-galeri {
     padding: 20px;
-    margin-top: 10PX;
+    margin-top: -20PX;
+  }
+
+  .categori-galeri {
+    margin-top: -20px;
   }
   
   #galeri{
@@ -357,6 +452,12 @@ audio {
 
 #link-footer {
   margin-top: 0px;
+}
+
+#footer-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #link-footer-sub {

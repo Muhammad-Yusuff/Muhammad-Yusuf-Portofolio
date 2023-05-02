@@ -1,4 +1,5 @@
 /*animasi Loading*/
+/*
 document.onreadystatechange = function() { 
   if (document.readyState !== "complete") { 
       document.querySelector( 
@@ -12,7 +13,7 @@ document.onreadystatechange = function() {
       "body").style.visibility = "visible"; 
   } 
 }; 
-
+*/
 /*porto1 firterabel galeri*/
 filterSelection("all")
 function filterSelection(c) {
